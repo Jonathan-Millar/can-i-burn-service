@@ -1,0 +1,74 @@
+{
+  "name": "can-i-burn-service",
+  "version": "1.0.0",
+  "description": "A TypeScript service for checking fire restrictions and burn status using real-time fire data from multiple sources",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write '**/*.ts' --ignore-path .gitignore",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "fire",
+    "burn",
+    "restrictions",
+    "wildfire",
+    "weather",
+    "geolocation",
+    "typescript",
+    "service"
+  ],
+  "author": "Jonathan Millar",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jonathan-Millar/can-i-burn-service.git"
+  },
+  "homepage": "https://github.com/Jonathan-Millar/can-i-burn-service#readme",
+  "bugs": {
+    "url": "https://github.com/Jonathan-Millar/can-i-burn-service/issues"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^9.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}

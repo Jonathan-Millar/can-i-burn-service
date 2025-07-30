@@ -1,0 +1,1 @@
+{"version":3,"file":"canIBurnService.d.ts","sourceRoot":"","sources":["../../src/services/canIBurnService.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,iBAAiB,EAAE,MAAM,UAAU,CAAC;AAK7D,qBAAa,eAAe;IAC1B,OAAO,CAAC,eAAe,CAAkB;IACzC,OAAO,CAAC,iBAAiB,CAAoB;;IAOvC,kBAAkB,CAAC,WAAW,EAAE,cAAc,GAAG,OAAO,CAAC,iBAAiB,CAAC;CAyBlF"}

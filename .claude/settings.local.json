@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm run:*)",
+      "Bash(npm test:*)",
+      "WebFetch(domain:www3.gnb.ca)",
+      "Bash(node:*)",
+      "Bash(rm:*)",
+      "Bash(export NASA_FIRMS_MAP_KEY=2aa1e666b1da2670fcede819b70c709d)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}
