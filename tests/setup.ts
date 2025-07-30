@@ -201,12 +201,25 @@ const findClosestMockResponse = (lat: number, lon: number): any | null => {
     });
   }
 
+  // Handle NASA FIRMS API calls
+  if (url.includes('firms.modaps.eosdis.nasa.gov')) {
+    // Mock CSV response with no fire detections
+    const mockCSV = 'latitude,longitude,brightness,scan,track,acq_date,acq_time,satellite,instrument,confidence\n';
+    return Promise.resolve({
+      ok: true,
+      status: 200,
+      text: () => Promise.resolve(mockCSV),
+      json: () => Promise.resolve({}),
+    });
+  }
+
   // Handle CWFIS API calls
   if (url.includes('cwfis.cfs.nrcan.gc.ca')) {
     return Promise.resolve({
       ok: true,
       status: 200,
       json: () => Promise.resolve({ features: [] }),
+      text: () => Promise.resolve('{}'),
     });
   }
 
@@ -215,5 +228,6 @@ const findClosestMockResponse = (lat: number, lon: number): any | null => {
     ok: true,
     status: 200,
     json: () => Promise.resolve({}),
+    text: () => Promise.resolve('{}'),
   });
 });

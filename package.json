@@ -1,6 +1,6 @@
 {
   "name": "can-i-burn-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript service for checking fire restrictions and burn status using real-time fire data from multiple sources",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

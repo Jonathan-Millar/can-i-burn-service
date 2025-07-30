@@ -41,7 +41,7 @@ export class FireStatusService {
     [
       'Alberta,Calgary',
       {
-        status: FireStatus.OPEN_BURN,
+        status: FireStatus.RESTRICTED_BURN,
         valid_from: new Date('2024-05-01T00:00:00Z'),
         valid_to: new Date('2024-11-30T23:59:59Z'),
         jurisdiction: 'Alberta Agriculture and Forestry',
